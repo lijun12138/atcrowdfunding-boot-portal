@@ -28,19 +28,19 @@
       <form class="form-signin" id="doReg" action="doReg.do" role="form" method="post">
         <h2 class="form-signin-heading"><i class="glyphicon glyphicon-log-in"></i> 用户注册</h2>
 		  <div class="form-group has-success has-feedback">
-			<input type="text" class="form-control"id="floginacct" value="${param.loginacct }" onchange="doChange()" placeholder="请输入登录账号" autofocus>
+			<input type="text" class="form-control"id="floginacct" value="${RequestParameters.loginacct }" onchange="doChange()" placeholder="请输入登录账号" autofocus>
 			<span class="glyphicon glyphicon-user form-control-feedback"></span>
 		  </div>
 		  <div class="form-group has-success has-feedback">
-			<input type="text" class="form-control" id="fusername" value="${param.username }" placeholder="请输入用户名称" style="margin-top:10px;">
+			<input type="text" class="form-control" id="fusername" value="${RequestParameters.username }" placeholder="请输入用户名称" style="margin-top:10px;">
 			<span class="glyphicon glyphicon-user form-control-feedback"></span>
 		  </div>
 		  <div class="form-group has-success has-feedback">
-			<input type="password" class="form-control" value="${param.userpswd }" id="fuserpswd" placeholder="请输入登录密码" style="margin-top:10px;">
+			<input type="password" class="form-control" value="${RequestParameters.userpswd }" id="fuserpswd" placeholder="请输入登录密码" style="margin-top:10px;">
 			<span class="glyphicon glyphicon-lock form-control-feedback"></span>
 		  </div>
 		  <div class="form-group has-success has-feedback">
-			<input type="text"  class="form-control" id="femail" value="${param.email }" placeholder="请输入邮箱地址" style="margin-top:10px;">
+			<input type="text"  class="form-control" id="femail" value="${RequestParameters.email }" placeholder="请输入邮箱地址" style="margin-top:10px;">
 			<span class="glyphicon glyphicon glyphicon-envelope form-control-feedback"></span>
 		  </div>
 		  
